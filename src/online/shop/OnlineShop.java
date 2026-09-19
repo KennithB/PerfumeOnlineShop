@@ -1,20 +1,17 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package online.shop;
 
 /**
- *
- * @author Kenneth
+ * Entry point forwarding to Main JFrame.
  */
 public class OnlineShop {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        try {
+            Class<?> mainClass = Class.forName("Main");
+            java.lang.reflect.Method mainMethod = mainClass.getMethod("main", String[].class);
+            mainMethod.invoke(null, (Object) args);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
-    
 }

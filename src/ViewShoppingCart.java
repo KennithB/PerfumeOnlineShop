@@ -1,4 +1,4 @@
-import com.mysql.jdbc.PreparedStatement;
+import java.sql.PreparedStatement;
 import javax.swing.table.DefaultTableModel;
 import java.sql.Connection;
 import java.sql.DriverManager;

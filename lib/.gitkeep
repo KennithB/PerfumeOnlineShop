@@ -1,0 +1,4 @@
+# Place required JAR dependencies here:
+# - AbsoluteLayout.jar
+# - jcalendar-1.4.jar
+# - mysql-connector-java.jar (or mysql-connector-j-*.jar)
