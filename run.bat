@@ -9,7 +9,9 @@ if exist "src\images" (
 )
 
 echo Compiling Java sources...
-javac -encoding UTF-8 -cp "lib/*;src" -d build/classes src/*.java src/online/shop/*.java
+dir /s /b src\*.java > sources.txt
+javac -encoding UTF-8 -cp "lib/*;src" -d build/classes @sources.txt
+del sources.txt
 if %ERRORLEVEL% neq 0 (
     echo [ERROR] Compilation failed. Check if all required JARs exist in lib\
     pause

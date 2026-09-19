@@ -13,10 +13,9 @@ A desktop Java Swing application for browsing, managing, and purchasing perfumes
 
 ## Setup Instructions
 
-### 1. Add Required Libraries
-Place the following `.jar` files into the `lib/` folder:
-- `jcalendar-1.4.jar` (Date & month chooser)
-- `mysql-connector-java.jar` (MySQL JDBC driver)
+### 1. External Libraries
+- Both `AbsoluteLayout` and `JCalendar` components are now embedded directly in the source code.
+- To enable database actions (cart, checkout, sales), place `mysql-connector-java.jar` (or `mysql-connector-j-*.jar`) in the `lib/` folder.
 
 ### 2. Database Setup
 1. Create a MySQL database named `products`:
