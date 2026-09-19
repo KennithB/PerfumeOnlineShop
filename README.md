@@ -15,7 +15,6 @@ A desktop Java Swing application for browsing, managing, and purchasing perfumes
 
 ### 1. Add Required Libraries
 Place the following `.jar` files into the `lib/` folder:
-- `AbsoluteLayout.jar` (NetBeans layout library)
 - `jcalendar-1.4.jar` (Date & month chooser)
 - `mysql-connector-java.jar` (MySQL JDBC driver)
 
@@ -35,9 +34,9 @@ Place the following `.jar` files into the `lib/` folder:
 ## How to Run
 
 ### Option A: Using the Launcher Script (Windows)
-Double-click `run.bat` or execute in terminal:
-```cmd
-run.bat
+Double-click `run.bat` in File Explorer, or in PowerShell:
+```powershell
+.\run.bat
 ```
 
 ### Option B: Using PowerShell
